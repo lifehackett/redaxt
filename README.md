@@ -103,25 +103,25 @@ Param builders are used to validate or transform parameters passed to the action
 ###### exists
 Validates that the parameter matching propName is not null or undefined
 ```js
-Params.exists('propName')
+Param.exists('propName')
 ```
 
 ###### notEmpty
 Validates that the parameter matching propName is not empty `[], {}, ''`
 ```js
-Params.notEmpty('propName')
+Param.notEmpty('propName')
 ```
 
 ###### is
 Validates that the parameter matching propName is of the specified type
 ```js
-Params.is('propName', type)
+Param.is('propName', type)
 ```
 
 ###### oneOf
 Validates that the parameter matching propName is one of the specified values
 ```js
-Params.oneOf('propName', [arrayOfPossibleValues])
+Param.oneOf('propName', [arrayOfPossibleValues])
 ```
 
 
