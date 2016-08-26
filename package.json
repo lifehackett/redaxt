@@ -1,5 +1,5 @@
 {
-  "name": "redact",
+  "name": "redaxt",
   "version": "0.0.2",
   "description": "An opinionated declarative set of factory functions for creating Redux actions.",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lifehackett/redact.git"
+    "url": "git+ssh://git@github.com/lifehackett/redaxt.git"
   },
   "keywords": [
     "redux",
@@ -21,9 +21,9 @@
   "author": "lifehackett",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lifehackett/redact/issues"
+    "url": "https://github.com/lifehackett/redaxt/issues"
   },
-  "homepage": "https://github.com/lifehackett/redact#readme",
+  "homepage": "https://github.com/lifehackett/redaxt#readme",
   "dependencies": {
     "ramda": "^0.22.1"
   },
