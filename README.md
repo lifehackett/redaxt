@@ -11,6 +11,7 @@ An opinionated declarative set of factory functions for creating Redux actions.
 - [ ] Make helpers like `createValidator` public
 - [ ] Provide documentation on writing custom builders
 - [ ] Unit Tests
+- [ ] Create pre-transpiled dist folder
 
 # Getting Started
 ```
@@ -93,7 +94,7 @@ Redaxt Action Creator: `dispatch(actionCreator({ param1, param2 }))`
 
 Type is considered a required property of an action object.  `createAction` will throw an error if you forget this property.
 ```js
-type(ACTION_TYPE)
+type('ACTION_TYPE')
 ```
 
 ### Params
@@ -114,13 +115,13 @@ Params.notEmpty('propName')
 ###### is
 Validates that the parameter matching propName is of the specified type
 ```js
-Params.exists('propName', type)
+Params.is('propName', type)
 ```
 
 ###### oneOf
 Validates that the parameter matching propName is one of the specified values
 ```js
-Params.exists('propName', [arrayOfPossibleValues])
+Params.oneOf('propName', [arrayOfPossibleValues])
 ```
 
 
