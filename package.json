@@ -4,7 +4,8 @@
   "description": "An opinionated declarative set of factory functions for creating Redux actions.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "mocha --compilers js:babel-core/register --require ./test/test-helper.js --recursive",
+    "test:watch": "npm run test -- --watch --watch-extensions jsx"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,11 @@
   "homepage": "https://github.com/lifehackett/redact#readme",
   "dependencies": {
     "ramda": "^0.22.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
   }
 }
