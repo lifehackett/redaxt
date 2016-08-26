@@ -1,4 +1,4 @@
-# redact
+# redaxt
 An opinionated declarative set of factory functions for creating Redux actions.
 
 (Note: This library is pretty new. I expect the existing API to be relatively stable, but plan to add to the core set of utility functions)
@@ -14,7 +14,7 @@ An opinionated declarative set of factory functions for creating Redux actions.
 
 # Getting Started
 ```
-npm i --save redact
+npm i --save redaxt
 ```
 
 # Opinionated
@@ -66,10 +66,10 @@ function fetchFoosSuccess(foos) {
 }
 ```
 
-# Redact Action Creators
+# Redaxt Action Creators
 This quickly becomes repetitive across data types. This same behavior can be done in a more declarative way.
 
-Here is the above example recreated with Redact
+Here is the above example recreated with Redaxt
 ```js
 // Create action takes 1-N of these functions.
 const fetchFoosSuccess = createAction(
@@ -80,14 +80,14 @@ const fetchFoosSuccess = createAction(
 );
 ```
 
-Redact exposes a factory function `createAction` that takes 1-N builder functions and returns an action object.
+Redaxt exposes a factory function `createAction` that takes 1-N builder functions and returns an action object.
 
 Builder functions receive action objects, apply some logic (typically some sort of validation or transform) and then return an action object.  `createAction` acts as a sort of pipeline marshalling actions throught the builders.
 
 **Important Difference:**
-Calling a Redact action creator is slightly different. You must wrap your parameters that you pass to the action creator in an object container.
+Calling a Redaxt action creator is slightly different. You must wrap your parameters that you pass to the action creator in an object container.
 Action Creator: `dispatch(actionCreator(param1, param2))`
-Redact Action Creator: `dispatch(actionCreator({ param1, param2 }))`
+Redaxt Action Creator: `dispatch(actionCreator({ param1, param2 }))`
 
 ### Type
 
