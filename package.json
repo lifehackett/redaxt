@@ -1,0 +1,29 @@
+{
+  "name": "redact",
+  "version": "0.0.1",
+  "description": "An opinionated declarative set of factory functions for creating Redux actions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lifehackett/redact.git"
+  },
+  "keywords": [
+    "redux",
+    "redux-actions",
+    "action",
+    "creators",
+    "react"
+  ],
+  "author": "lifehackett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lifehackett/redact/issues"
+  },
+  "homepage": "https://github.com/lifehackett/redact#readme",
+  "dependencies": {
+    "ramda": "^0.22.1"
+  }
+}
