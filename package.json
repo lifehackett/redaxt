@@ -2,8 +2,10 @@
   "name": "redaxt",
   "version": "0.0.4",
   "description": "An opinionated declarative set of factory functions for creating Redux actions.",
-  "main": "index.js",
+  "main": "./distribution/index.js",
   "scripts": {
+    "compile": "babel src -d dist",
+    "prepublish": "npm run compile",
     "test": "mocha --compilers js:babel-core/register --require ./test/test-helper.js --recursive",
     "test:watch": "npm run test -- --watch --watch-extensions jsx"
   },
