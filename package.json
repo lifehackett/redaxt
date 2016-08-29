@@ -1,6 +1,6 @@
 {
   "name": "redaxt",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "An opinionated declarative set of factory functions for creating Redux actions.",
   "main": "./dist/index.js",
   "scripts": {
@@ -10,7 +10,9 @@
     "test:watch": "npm run test -- --watch --watch-extensions jsx"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   },
   "repository": {
     "type": "git",
