@@ -2,7 +2,7 @@
   "name": "redaxt",
   "version": "0.0.5",
   "description": "An opinionated declarative set of factory functions for creating Redux actions.",
-  "main": "./distribution/index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "compile": "babel src -d dist",
     "prepublish": "npm run compile",
