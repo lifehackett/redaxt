@@ -4,15 +4,10 @@
   "description": "An opinionated declarative set of factory functions for creating Redux actions.",
   "main": "./dist/index.js",
   "scripts": {
-    "compile": "babel src -d dist",
+    "compile": "babel --presets es2015 src -d dist",
     "prepublish": "npm run compile",
     "test": "mocha --compilers js:babel-core/register --require ./test/test-helper.js --recursive",
     "test:watch": "npm run test -- --watch --watch-extensions jsx"
-  },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
   },
   "repository": {
     "type": "git",
