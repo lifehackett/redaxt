@@ -1,6 +1,6 @@
 {
   "name": "redaxt",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An opinionated declarative set of factory functions for creating Redux actions.",
   "main": "./dist/index.js",
   "scripts": {
