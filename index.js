@@ -1,13 +1,13 @@
-import { default as _createAction } from './create-action';
-import { default as _type } from './type';
-import { default as _exists } from './param/exists';
-import { default as _is } from './param/is';
-import { default as _oneOf } from './param/one-of';
-import { default as _notEmpty } from './param/not-empty';
+import { default as _createAction } from './src/create-action';
+import { default as _type } from './src/type';
+import { default as _exists } from './src/param/exists';
+import { default as _is } from './src/param/is';
+import { default as _oneOf } from './src/param/one-of';
+import { default as _notEmpty } from './src/param/not-empty';
 import {
   beginBlockingAsync as  _beginBlockingAsync,
   endBlockingAsync as _endBlockingAsync,
-} from './meta/blocking-async'
+} from './src/meta/blocking-async'
 
 export const createAction = _createAction;
 export const type = _type;
